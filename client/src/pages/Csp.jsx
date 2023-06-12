@@ -21,8 +21,7 @@ const Csp = () => {
             <div className={styles.usertext}>
               <h1 className={styles.usertextheader}>Register CSP</h1>
               <p className={styles.usertextbody}>
-                Lorem ipsum, dolor sit amet consectetur <br /> adipisicing elit.
-                Ea, veniam?
+              You can register your csp here
               </p>
             </div>
             <div className={styles.userbutton}>
@@ -35,8 +34,7 @@ const Csp = () => {
             <div className={styles.usertext}>
               <h1 className={styles.usertextheader}>View Customer</h1>
               <p className={styles.usertextbody}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                itaque.
+                View  your all customer
               </p>
             </div>
             <div className={styles.userbutton}>

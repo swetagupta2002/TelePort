@@ -16,7 +16,7 @@ const Portnumber = () => {
   const [Number, setNumber] = useState(0);
 
   //const [NewAddress,setNewAddress]=useState("");
-  const handlePort = () => {
+  const handlePort = (e) => {
     // find the csp address from csp name
     // token id from mobile no
 
@@ -48,7 +48,7 @@ const Portnumber = () => {
     //     })
     //   })
     // })
-
+    e.preventDefault();
     transferMobileNo(Contract, account.currentAccount, Old, Number, Name).then(
       (res) => {
         console.log(res);

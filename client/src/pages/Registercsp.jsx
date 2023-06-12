@@ -12,9 +12,7 @@ const Registercsp = () => {
   const [Name, setName] = useState("");
 
   const handleView = () => {
-    getAllCSP(Contract).then((data) => {
-      console.log(data);
-    });
+    navigate("/viewCSP");
   };
   const handleRegister = async (e) => {
     e.preventDefault();

@@ -20,8 +20,7 @@ const User = () => {
             <div className={styles.usertext}>
               <h1 className={styles.usertextheader}>Issue New Number</h1>
               <p className={styles.usertextbody}>
-                Lorem ipsum, dolor sit amet consectetur <br /> adipisicing elit.
-                Ea, veniam?
+                You can  Issue a new number here 
               </p>
             </div>
             <div className={styles.userbutton}>
@@ -34,8 +33,7 @@ const User = () => {
             <div className={styles.usertext}>
               <h1 className={styles.usertextheader}>Port Number</h1>
               <p className={styles.usertextbody}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                itaque.
+                You can Port your number to another csp here
               </p>
             </div>
             <div className={styles.userbutton}>

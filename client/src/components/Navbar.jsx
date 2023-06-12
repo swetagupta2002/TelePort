@@ -2,8 +2,7 @@ import React, { useContext } from "react";
 import Web3Context from "../context";
 import styles from "./Navbar.module.css";
 const Navbar = (props) => {
-  const { account } = useContext(Web3Context);
-  console.log(account);
+  const currentAccount=localStorage.getItem('currAccount')
   return (
     <nav className={styles.navbar}>
       <div className={styles.logoContainer}>
@@ -14,9 +13,9 @@ const Navbar = (props) => {
       </div>
       <button className={styles.accountButton}>
         Hey,{" "}
-        {`${String(account.currentAccount).slice(0, 9)}...${String(
-          account.currentAccount
-        ).slice(String(account.currentAccount).length - 9)}`}
+        {`${String(currentAccount).slice(0, 9)}...${String(
+          currentAccount
+        ).slice(String(currentAccount).length - 9)}`}
       </button>
     </nav>
   );

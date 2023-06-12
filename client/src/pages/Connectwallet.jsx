@@ -8,12 +8,12 @@ const Connectwallet = () => {
   const navigate = useNavigate();
   const { connectWallet, checkIfWalletIsConnected, account } =
     useContext(Web3Context);
-  const handleConnect = () => {
-    connectWallet();
-    checkIfWalletIsConnected();
-    
+  const handleConnect = async () => {
+    const res=await connectWallet();
+    const temp= await checkIfWalletIsConnected();
+    console.log(res);
+    console.log(temp);
     console.log("Account Length", account);
-    navigate("/main");
   };
   return (
     <div>

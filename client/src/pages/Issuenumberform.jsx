@@ -1,9 +1,11 @@
 import React, { useState, useContext } from "react";
+import { useNavigate } from "react-router-dom/dist/umd/react-router-dom.development";
 import Web3Context from "../context";
 import { createMobileNo } from "../context/useContract/writeContract";
 import client from "../utils/ipfs";
 import styles from "./Form.module.css";
 const Issuenumberform = () => {
+  const navigate= useNavigate();
   const { Contract, account } = useContext(Web3Context);
   var number = 0;
   const [Name, setName] = useState("");
@@ -77,7 +79,9 @@ const Issuenumberform = () => {
       finalResult,
       account.currentAccount
     );
-    alert("NFT created");
+    alert('NFT added');
+    alert("Mobile number Issude Successfuly");
+    navigate("/user");
   };
 
   return (

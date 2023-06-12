@@ -1,5 +1,5 @@
 import React ,{useEffect,useContext}from 'react'
-
+import ViewCSP from './pages/ViewCSP';
 import Connectwallet from "./pages/Connectwallet";
 import Issuenumberform from "./pages/Issuenumberform";
 import Mainpage from "./pages/Mainpage";
@@ -25,13 +25,14 @@ return (
   <div>
     <Routes>
       <Route path='/' element={<Connectwallet />} />
-      <Route path='/issue' element={<Hoc><Issuenumberform/></Hoc>}/>
+      <Route path='/issue' element={<Hoc><Issuenumberform /></Hoc>}/>
       <Route path='/main' element={<Hoc><Mainpage /></Hoc>} />
       <Route path='/user' element={<Hoc><User /></Hoc>}/>
-      <Route path='/port' element={<Hoc><Portnumber/></Hoc>}/>
-      <Route path='/register' element={<Hoc><Registercsp/></Hoc>}/>
-      <Route path='/csp' element={<Hoc><Csp/></Hoc>}/>
-      <Route path='/view' element={<Hoc><Viewusers/></Hoc>}/>
+      <Route path='/port' element={<Hoc><Portnumber /></Hoc>}/>
+      <Route path='/register' element={<Hoc><Registercsp /></Hoc>}/>
+      <Route path='/csp' element={<Hoc><Csp /></Hoc>}/>
+      <Route path='/view' element={<Hoc><Viewusers /></Hoc>}/>
+      <Route path='/viewCSP' element={<Hoc><ViewCSP /></Hoc>}/>
     </Routes>
   </div>
 )
