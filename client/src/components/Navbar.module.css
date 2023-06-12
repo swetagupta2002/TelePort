@@ -1,0 +1,29 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: white;
+  }
+  
+  .logoContainer {
+    margin-right: 10px;
+  }
+  
+  .logoImage {
+    height: 40px;
+  }
+  
+  .accountButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: blue;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
